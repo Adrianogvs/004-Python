@@ -11,37 +11,38 @@
 """
 
 nome = 'Adriano Vilela'
-altura = 1.85
-peso = 106
-imc = 0 # imc = peso / (altura * altura)
+idade = 40
+altura = 1.85  # Corrigido para número decimal
+peso = 110
 
-nome = 'Adriano Vilela'
-altura = 1.85
-peso = 106
+def classificacao(peso, altura):
+    # Função interna para calcular o IMC
+    def calcular_imc(peso, altura):
+        return peso / (altura ** 2)
 
-# Função para calcular o IMC
-def calculo_imc(peso, altura):
-    return peso / altura**2 
+    # Chamada da função de cálculo do IMC
+    imc = calcular_imc(peso, altura)
+    print(f"IMC calculado: {imc:.2f}")
 
-# Calcula o IMC antes de usar no match-case
-imc = calculo_imc(peso, altura)
+    # Função interna para classificar o IMC
+    def classificar_imc(imc):
+        match imc:
+            case _ if imc > 40:
+                return 'Obesidade Grau III (mórbida)'
+            case _ if 35 <= imc <= 40:
+                return 'Obesidade Grau II (severa)'
+            case _ if 30 <= imc < 35:
+                return 'Obesidade Grau I'
+            case _ if 25 <= imc < 30:
+                return 'Sobrepeso'
+            case _ if 18.5 <= imc < 25:
+                return 'Peso normal'
+            case _:
+                return 'Abaixo do peso'
 
-# Função para classificar o IMC
-def classifica_imc(imc):
-    match imc:
-        case _ if 35 <= imc <= 40:
-            return "IMC entre 35 e 40! (Obesidade Grau II)"
-        case _ if 30 <= imc < 35:
-            return "IMC entre 30 e 35! (Obesidade Grau I)"
-        case _ if 25 <= imc < 30:
-            return "IMC entre 25 e 30! (Sobrepeso)"
-        case _ if 18.6 <= imc < 25:
-            return "IMC normal!"
-        case _:
-            return "IMC abaixo do normal!"
+    # Retorna a classificação do IMC
+    return classificar_imc(imc)
 
-# Exibe os resultados corretamente
-print(f"Nome: {nome}")
-print(f"IMC: {imc:.2f}")  
-print(classifica_imc(imc))  
-
+# Chamando a função principal e exibindo o resultado
+resultado = classificacao(peso, altura)
+print(f"A classificação do IMC de {nome} é: {resultado}")
