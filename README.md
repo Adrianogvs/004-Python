@@ -153,6 +153,58 @@ else:
 
 ---
 
+# 📌 **Uso de AND, OR e TRY**
+
+## 🔹 **Operadores Lógicos (`and` e `or`)**
+Os operadores `and` e `or` são usados para combinar múltiplas condições.
+
+```python
+idade = 25
+tem_habilitacao = True
+
+if idade >= 18 and tem_habilitacao:
+    print("Você pode dirigir!")
+else:
+    print("Você não pode dirigir.")
+```
+🔹 **Saída esperada:**
+```
+Você pode dirigir!
+```
+
+```python
+tem_passaporte = False
+
+tem_visto = True
+
+if tem_passaporte or tem_visto:
+    print("Você pode viajar para o exterior!")
+else:
+    print("Você não pode viajar.")
+```
+🔹 **Saída esperada:**
+```
+Você pode viajar para o exterior!
+```
+
+## 🔹 **Tratamento de Exceções (`try-except`)**
+O bloco `try` permite testar um bloco de código em busca de erros. O `except` captura e trata qualquer erro que ocorra.
+
+```python
+try:
+    numero = int(input("Digite um número: "))
+    resultado = 10 / numero
+    print("Resultado:", resultado)
+except ValueError:
+    print("Erro: Você deve digitar um número inteiro.")
+except ZeroDivisionError:
+    print("Erro: Não é possível dividir por zero.")
+```
+Se o usuário digitar `0`, o `except ZeroDivisionError` será acionado. Se digitar um texto ao invés de número, o `except ValueError` será acionado.
+
+
+---
+
 # 🚀 **Conclusão**
 Este documento apresentou conceitos fundamentais do Python, como **variáveis, tipos de dados, conversão de tipos, PEP 8, operadores aritméticos e sua precedência**. 
 
