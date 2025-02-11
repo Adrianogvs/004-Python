@@ -112,7 +112,7 @@ print(bool(0))  # False
 
 ---
 
-# 📌 **Operadores Aritméticos e Precedência**
+# 📌 **Operadores Aritméticos e Comparação**
 
 ## 🔹 **Operadores Aritméticos**
 | Operador | Descrição | Exemplo | Resultado |
@@ -125,21 +125,30 @@ print(bool(0))  # False
 | `%` | Módulo | `10 % 4` | `2` |
 | `**` | Exponenciação | `2 ** 3` | `8` |
 
-## 🔹 **Precedência dos Operadores**
-| Ordem | Operador | Descrição |
-|--------|-----------|---------------------------|
-| 1️⃣ | `()` | **Parênteses** (maior prioridade) |
-| 2️⃣ | `**` | **Exponenciação** |
-| 3️⃣ | `*`, `/`, `//`, `%` | **Multiplicação, divisão, divisão inteira e módulo** |
-| 4️⃣ | `+`, `-` | **Adição e subtração** |
+## 🔹 **Operadores de Comparação**
+| Operador | Descrição | Exemplo | Resultado |
+|----------|-----------|---------|----------|
+| `>`  | Maior que | `10 > 5` | `True` |
+| `>=` | Maior ou igual a | `10 >= 10` | `True` |
+| `<`  | Menor que | `5 < 10` | `True` |
+| `<=` | Menor ou igual a | `5 <= 5` | `True` |
+| `==` | Igual a | `10 == 10` | `True` |
+| `!=` | Diferente de | `10 != 5` | `True` |
 
-## 🔹 **Exemplo de Precedência**
+---
+
+# 📌 **Estruturas Condicionais em Python (if, elif, else)**
+
+As estruturas condicionais são usadas para tomar decisões dentro do código com base em condições.
+
 ```python
-resultado = 10 + 3 * 2  # Multiplicação ocorre primeiro
-print(resultado)  # Saída: 16
-
-resultado = (10 + 3) * 2  # Parênteses têm maior prioridade
-print(resultado)  # Saída: 26
+idade = 18
+if idade < 18:
+    print("Você é menor de idade.")
+elif idade == 18:
+    print("Você acabou de atingir a maioridade!")
+else:
+    print("Você é maior de idade.")
 ```
 
 ---
