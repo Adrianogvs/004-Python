@@ -1,55 +1,112 @@
-# 🚀 Meu Aprendizado no Curso de Python 3
+# Suzano - Python Developer
 
-## 📌 Sobre o Curso
-Este é, sem sombra de dúvidas, um dos cursos mais completos de Python 3 disponíveis atualmente. Ele é constantemente atualizado para acompanhar as versões mais recentes do Python e possui mais de **140 horas de conteúdo** distribuídas em mais de **745 aulas**. Além disso, o curso conta com seções bônus sobre **expressões regulares, SQL, Django, HTML e CSS**.
+Este repositório contém os projetos e desafios desenvolvidos durante o Bootcamp **Suzano - Python Developer** da Digital Innovation One (DIO). O objetivo deste bootcamp é proporcionar uma formação completa em Python, abordando desde os conceitos básicos até aplicações avançadas, incluindo Programação Orientada a Objetos (POO), manipulação de dados e integração com serviços de IA.
 
-O curso já teve mais de **185.000 alunos** e mais de **53.000 avaliações positivas**, o que reforça sua qualidade e abrangência.
+## 🚀 Objetivo
 
-## 🎯 O Que Estou Aprendendo?
-O curso cobre **Python 3 do básico ao avançado**, e está estruturado de maneira progressiva, permitindo que tanto iniciantes quanto programadores experientes possam aproveitar o conteúdo.
+O bootcamp tem como propósito capacitar os participantes para desenvolver soluções eficientes utilizando Python, preparando-os para o mercado de trabalho com projetos práticos e experiências reais.
 
-- **Iniciantes**: lógica de programação e os fundamentos do Python 3.
-- **Intermediários**: programação procedural e funcional, incluindo o uso de funções, estruturas de repetição e outros conceitos importantes.
-- **Avançados**: programação orientada a objetos no estilo Pythônico, incluindo **Padrões de Projeto GoF**.
-- **Módulos úteis**: estudo de bibliotecas importantes do Python e de terceiros, como **Selenium, Django, SQLite, Pytest e Unittest**.
-- **Banco de Dados**: manipulação de **SQLite3, MySQL e MariaDB** dentro do Python.
-- **Desenvolvimento Web**: criação de projetos com **Django**.
-- **Interface Gráfica**: desenvolvimento de aplicações visuais com **PySide6 (Qt 6)**.
-- **Testes Automatizados**: implementação de **Test-Driven Development (TDD)** e testes automatizados em Python.
-- **Expressões Regulares (Regex)**: abordagem prática para manipulação e validação de textos.
-- **Design Patterns**: aprendizado de **padrões de projeto (GoF)** aplicados à programação orientada a objetos.
-- **Extras**: seções sobre **HTML5, CSS3, SQL com MySQL e comandos Unix (Linux, Mac e Windows WSL2)**.
+## 📅 Cronograma e Progresso
 
-## 🛠️ Projetos Práticos
-A melhor maneira de aprender é colocando a mão na massa, e esse curso oferece diversos **projetos reais**, como:
-- **Gerador e Validador de CPF**
-- **Aplicações Web com Django**
-- **Interfaces gráficas interativas com PySide6**
-- **Automação de tarefas com Selenium**
-- **Implementação de APIs**
-- **Deploy de aplicações no Google Cloud Platform** (configurando um servidor Linux com SSH)
+- **Início:** 12/02/2025  
+- **Data limite para conclusão:** 20/04/2025  
+- **Previsão de conclusão:** 06/04/2025  
 
-## 💡 Por Que Este Curso?
-✔ **Atualizações garantidas** pelo instrutor Luiz Otávio Miranda.  
-✔ **Foco prático**: os projetos são voltados para aplicação no mercado de trabalho.  
-✔ **Abordagem completa**: ideal para iniciantes e profissionais que querem aprimorar suas habilidades.  
-✔ **Acompanhamento passo a passo**: desde a instalação do Python até conceitos avançados de desenvolvimento.  
-✔ **Comunidade ativa**: milhares de alunos compartilhando dúvidas e soluções.
+## 🔥 Detalhes do Bootcamp
 
-## 📚 Para Quem Este Curso É Indicado?
-- Quem nunca programou e quer aprender Python do zero.
-- Desenvolvedores de outras linguagens que querem migrar para Python.
-- Programadores intermediários que querem aprofundar conhecimentos.
-- Profissionais que desejam trabalhar com **automação, desenvolvimento web, análise de dados e testes automatizados**.
-- Desenvolvedores avançados que querem dominar **Django, Design Patterns e Interfaces Gráficas**.
+O caminho em comum com quem domina Python!  
+Seus primeiros passos até dominar Python começam aqui! Crie projetos de identificação de imagens com uma linguagem simples e dinâmica, e entre no mercado em dia com as principais práticas atuais de uso de IA para produtividade, usando o Microsoft Copilot e Azure.  
 
-## 🏁 Minha Jornada
-Ao finalizar esse curso, terei adquirido **conhecimentos sólidos** para atuar como desenvolvedor Python, criando soluções robustas e escaláveis para diversos problemas do mundo real.
+Inscreva-se neste Bootcamp gratuito e comece a sua jornada rumo a **7 projetos** para destacar seu portfólio e habilidades procuradas por recrutadores do mundo inteiro.
 
-O aprendizado não para por aqui! 🚀 Python é uma linguagem poderosa e flexível, e esse curso está me proporcionando a base ideal para continuar crescendo na área de tecnologia.
+## 📂 Estrutura do Repositório
+
+Abaixo está a estrutura sugerida para organização dos projetos e desafios do bootcamp:
+
+```plaintext
+📦 Suzano-Python-Developer
+├── 📂 01-Introducao-Python
+│   ├── 📂 Introducao-Python-Suzano
+│   ├── 📂 Ambiente-Desenvolvimento-Python
+│   ├── 📂 Conhecendo-Linguagem-Python
+│   ├── 📂 Versionamento-Git-GitHub
+│   ├── 📂 Portfolio-Vencedor
+│   ├── 📂 Projeto-Open-Source
+├── 📂 02-Sintaxe-Basica
+│   ├── 📂 Tipos-Operadores
+│   ├── 📂 Estruturas-Condicionais-Repeticao
+│   ├── 📂 Manipulando-Strings
+│   ├── 📂 Funcoes-Python
+│   ├── 📂 Projeto-Sistema-Bancario
+├── 📂 03-Colecoes-Python
+│   ├── 📂 Listas
+│   ├── 📂 Tuplas
+│   ├── 📂 Conjuntos
+│   ├── 📂 Dicionarios
+│   ├── 📂 Datas-Horas-Fusos
+│   ├── 📂 Otimizando-Sistema-Bancario
+├── 📂 04-POO-Python
+│   ├── 📂 Introducao-POO
+│   ├── 📂 Heranca
+│   ├── 📂 Encapsulamento
+│   ├── 📂 Polimorfismo
+│   ├── 📂 Interfaces-Classes-Abstratas
+│   ├── 📂 Projeto-Sistema-Bancario-POO
+│   ├── 📂 Projeto-Pacote-Processamento-Imagens
+├── 📂 05-Produtividade-Copilot
+│   ├── 📂 Introducao-Microsoft-Copilot
+│   ├── 📂 Criando-Copiloto
+│   ├── 📂 Trabalhando-Topicos-Fallback
+│   ├── 📂 Criando-Respostas-Generativas-IA
+│   ├── 📂 Projeto-Copiloto-Fluxo-Conversa
+├── 📂 06-IA-e-Azure
+│   ├── 📂 Fundamentos-IA-Generativa
+│   ├── 📂 Conceitos-IA
+│   ├── 📂 Fundamentos-Machine-Learning
+│   ├── 📂 Processamento-Linguagem-Natural
+│   ├── 📂 Projeto-Analise-Sentimentos-Azure-AI
+│   ├── 📂 Trabalhando-Azure-OpenAI
+├── 📂 Certificados
+│   ├── 📜 Certificado-Bootcamp.pdf
+│   ├── 📜 Outros-Certificados.pdf
+├── README.md
+```
+
+## 🎯 Atividades do Bootcamp
+
+### 📡 Mentorias (Live)
+Momento em que você irá se inspirar nos talentos das empresas mais inovadoras do mundo, podendo interagir ao longo da live e até fazer perguntas sobre carreira e tecnologia.
+
+### 🏆 Ranking
+Cada bootcamp possui um ranking com **premiações exclusivas**, onde você pontua de acordo com as interações que realiza no **Fórum e Rooms**, dos acertos que tem em questionários e da qualidade do código que desenvolveu nos desafios.
+
+### 💡 Desafio de Código
+Coloque em prática todo o conhecimento adquirido nas aulas e teste o seu conhecimento na resolução de um desafio.
+
+### 🏗 Desafio de Projeto
+Construa o seu portfólio desenvolvendo projetos práticos com o conhecimento adquirido ao longo das aulas.
+
+## 🛠 Ferramentas para Aprendizado
+
+### 📌 Fórum
+Espaço para você interagir e tirar suas dúvidas técnicas com a nossa comunidade.
+
+### 🗣 Rooms
+Espaço para você conversar com outros matriculados no bootcamp e aumentar o seu networking.
+
+### 👥 Matriculados
+Saiba quem está participando da mesma jornada educacional que você.
+
+### 📜 Certificado
+Baixe e compartilhe os certificados de todas as suas conquistas ao longo desse bootcamp.
+
+## 🏆 Certificação
+Ao concluir todos os cursos e projetos do bootcamp até **20/04/2025**, será possível obter o certificado oficial da DIO e Suzano.
+
+## ❓ Precisa de Ajuda?
+Se tiver alguma dúvida, quiser relatar um erro na plataforma ou sugerir melhorias, acesse a nossa **Central de Dúvidas** ou solicite ajuda ao suporte clicando no link abaixo:
+
+🔗 [Acessar Suporte da DIO](https://www.dio.me)
 
 ---
-📌 **Instrutor:** Luiz Otávio Miranda  
-🌐 **Plataforma:** Udemy  
-🎯 **Curso:** [Python 3 - Do Zero ao Avançado](https://www.udemy.com/course/python-3-do-zero-ao-avancado/)
-
+📌 *Este repositório faz parte do meu aprendizado contínuo em Python. Para mais informações sobre os cursos e bootcamps da DIO, acesse [DIO.me](https://www.dio.me/).*
