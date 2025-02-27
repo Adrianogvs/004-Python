@@ -19,7 +19,13 @@ while True:
     opcao = input(menu)
 
     if opcao == 'd':
-        print(f'Depósito')
+        valor = float(input('Informe o valor do deposito: '))
+
+        if valor > 0:
+            saldo += valor
+            extrato += f'Deposito de: R$ {valor:.2f}\n'
+        else:
+            print('Operação falhou! O valor informando é inválido.')
     
     elif opcao == 's':
         print(f'Saque')
