@@ -1,42 +1,56 @@
 menu = """
-
 Selecione uma das opções abaixo:
 [s] = Saque
-[d] = Deposito
+[d] = Depósito
 [e] = Extrato
 [q] = Sair
-
 """
+
 saldo = 0
 limite = 500
 extrato = ""
-numero_sques = 0
+numero_saques = 0
 LIMITE_SAQUES = 3
 
-
 while True:
-
-    opcao = input(menu)
+    opcao = input(menu).strip().lower()
 
     if opcao == 'd':
-        valor = float(input('Informe o valor do deposito: '))
+        valor = float(input("Informe o valor do depósito: "))
 
         if valor > 0:
             saldo += valor
-            extrato += f'Deposito de: R$ {valor:.2f}\n'
+            extrato += f"Depósito: R$ {valor:.2f}\n"
+            print("Depósito realizado com sucesso!")
         else:
-            print('Operação falhou! O valor informando é inválido.')
-    
+            print("Operação falhou! O valor informado é inválido.")
+
     elif opcao == 's':
-        print(f'Saque')
-    
+        valor = float(input("Informe o valor do saque: "))
+
+        if valor > saldo:
+            print("Operação falhou! Saldo insuficiente.")
+        elif valor > limite:
+            print(f"Operação falhou! O valor máximo por saque é R$ {limite:.2f}.")
+        elif numero_saques >= LIMITE_SAQUES:
+            print("Operação falhou! Número máximo de saques excedido.")
+        elif valor > 0:
+            saldo -= valor
+            extrato += f"Saque: R$ {valor:.2f}\n"
+            numero_saques += 1
+            print("Saque realizado com sucesso!")
+        else:
+            print("Operação falhou! O valor informado é inválido.")
+
     elif opcao == 'e':
-        print(f'Extrato')
-    
+        print("\n===== EXTRATO =====")
+        print(extrato if extrato else "Nenhuma movimentação realizada.")
+        print(f"Saldo atual: R$ {saldo:.2f}")
+        print("===================\n")
+
     elif opcao == 'q':
+        print("Saindo... Obrigado por utilizar nosso sistema!")
         break
 
     else:
-        print(f'Operação invalida, por favor selecione a operação desejada!')
-    
-
+        print("Operação inválida! Por favor, selecione uma opção válida.")
