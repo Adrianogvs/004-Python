@@ -3,3 +3,4 @@
 numero = int(input('Digite um numero: '))
 
 print(f'O antecessor do número {numero} é: {numero - 1}. E o sucessor do número {numero} é: {numero + 1}')
+
